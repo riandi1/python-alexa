@@ -1,6 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
+      "invocationName": "chat avançado",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -19,20 +20,22 @@
           "samples": []
         },
         {
+          "name": "GptQueryIntent",
           "slots": [
             {
               "name": "query",
-              "type": "AMAZON.Person"
+              "type": "AMAZON.SearchQuery"
             }
           ],
-          "name": "GptQueryIntent",
           "samples": [
+            "pergunte a inteligência {query}",
+            "responda {query}",
+            "me diga sobre {query}",
             "{query}"
           ]
         }
       ],
-      "types": [],
-      "invocationName": "chat avançado"
+      "types": []
     }
   }
 }

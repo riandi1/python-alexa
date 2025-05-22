@@ -1,12 +1,34 @@
 {
   "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "name": "deepseek",
+          "summary": "Uma skill de exemplo.",
+          "description": "Essa é uma skill de exemplo chamada deepseek.",
+          "examplePhrases": [
+            "Alexa, abra deepseek",
+            "Alexa, peça para deepseek dizer olá"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Instruções de teste de exemplo.",
+      "distributionCountries": []
+    },
     "apis": {
       "custom": {
         "endpoint": {
           "uri": "arn:aws:lambda:us-east-1:388806798322:function:b401a0f7-35a7-4480-b780-2d6cc16fa517:Release_0"
         },
         "interfaces": [],
-        "locales": {},
+        "locales": {
+          "pt-BR": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:388806798322:function:b401a0f7-35a7-4480-b780-2d6cc16fa517:Release_0"
+            }
+          }
+        },
         "regions": {
           "NA": {
             "endpoint": {
@@ -26,16 +48,6 @@
         }
       }
     },
-    "manifestVersion": "1.0",
-    "publishingInformation": {
-      "distributionCountries": [],
-      "isAvailableWorldwide": true,
-      "locales": {
-        "pt-BR": {
-          "name": "deepseek"
-        }
-      },
-      "testingInstructions": "Sample Testing Instructions."
-    }
+    "manifestVersion": "1.0"
   }
 }
